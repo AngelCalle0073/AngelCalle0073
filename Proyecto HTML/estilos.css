@@ -1,0 +1,147 @@
+/* Versión de escritorio. NO MODIFICAR */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #edf2f4;
+    color: #293241;
+}
+
+#pagina {
+    width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.cabecera {
+    background-color: #264653;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.titulo {
+    margin: 0;
+    font-size: 38px;
+}
+
+.subtitulo {
+    margin-bottom: 0;
+}
+
+.menu {
+    background-color: #2a9d8f;
+    text-align: center;
+}
+
+.enlace-menu {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+}
+
+.contenido {
+    padding: 25px;
+}
+
+.presentacion {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-presentacion {
+    color: #264653;
+}
+
+.imagen-presentacion {
+    width: 550px;
+    height: auto;
+}
+
+.texto-presentacion {
+    width: 75%;
+    margin: 15px auto;
+    line-height: 1.5;
+}
+
+.titulo-experiencias {
+    text-align: center;
+    color: #264653;
+}
+
+.experiencia {
+    width: 820px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #f1f7f6;
+    border: 1px solid #b7d5d1;
+    border-radius: 8px;
+}
+
+.titulo-experiencia {
+    color: #2a9d8f;
+    font-size: 25px;
+}
+
+.imagen-experiencia {
+    width: 260px;
+    height: auto;
+}
+
+.descripcion {
+    line-height: 1.5;
+}
+
+.pie {
+    background-color: #264653;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/******************************/
+/* Añade a partir de aquí los @media necesarios */
+/******************************/
+
+@media (min-width: 599px) and (max-width: 1051px){
+    #pagina {width: 92vw;}
+
+    .cabecera {padding: 20px;}
+
+    h1 {font-size: 30px;}
+
+    .enlace-menu {padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;}
+
+    .imagen-presentacion {width: 70vw;}
+
+    .texto-presentacion {width: 90vw;}
+
+    #experiencias {width: 88vw;}
+
+    #experiencias article img {width: 200px;}
+}
+
+@media (max-width: 600px){
+    #pagina {width: 100vw; margin: 0;}
+
+    .cabecera {padding: 215px;}
+
+    h1 {font-size: 26px;}
+
+    .enlace-menu {padding: 12px}
+
+    .contenido {font-size: 10px;}
+
+    .imagen-presentacion {width: 90vw;}
+
+    .texto-presentacion {width: 95vw;}
+
+    #experiencias {width: 92vw; padding: 15px; margin-top: 12px; text-align: center;}
+
+    #experiencias article img {width: 100vw;}
+
+    .titulo-experiencias {font-size: 21px;}
+
+    /*.descripcion {text: hidden;}*/
+}

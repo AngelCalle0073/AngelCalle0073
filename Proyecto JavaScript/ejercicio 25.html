@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de Tareas</title>
+    <script src="ejercicio 25.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e9;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #1b5e20;
+        }
+
+        #listaTareas {
+            list-style: none;
+            padding: 0;
+            width: 500px;
+        }
+
+        #listaTareas li {
+            padding: 15px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+
+        /* Alternancia verde oscuro / verde claro */
+        #listaTareas li:nth-child(odd) {
+            background-color: #2e7d32;
+            color: white;
+        }
+
+        #listaTareas li:nth-child(even) {
+            background-color: #66bb6a;
+            color: white;
+        }
+
+        .botones {
+            margin-top: 20px;
+            width: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        button {
+            background-color: #1b5e20;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #388e3c;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Gestor de Tareas</h1>
+
+    <ul id="listaTareas">
+        <li>Realizar práctica de HTML</li>
+        <li>Entregar ejercicio de CSS</li>
+        <li>Estudiar JavaScript</li>
+        <li>Subir proyecto a GitHub</li>
+        <li>Revisar apuntes del tema</li>
+        <li>Preparar examen</li>
+        <li>Corregir errores del proyecto</li>
+    </ul>
+
+    <div class="botones">
+        <button>Añadir Tarea al Inicio</button>
+        <button>Añadir Tarea al Final</button>
+        <button>Eliminar Última Tarea</button>
+        <button>Eliminar Primera Tarea</button>
+    </div>
+
+    </body>
+</html>
